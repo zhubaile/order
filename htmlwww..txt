@@ -1,0 +1,13 @@
+
+    <!-- 
+        CSS布局之--淘宝双飞翼布局：
+        http://www.cnblogs.com/langzs/archive/2013/01/27/taobaoshuangfeiyi.html
+    下面的布局也可以看看：
+    http://www.cduyzh.com/css-layout/
+    http://www.bkjia.com/CSSjc/341777.html
+    http://www.bkjia.com/CSSjc/341777.html
+    http://www.cnblogs.com/caocaoyu/archive/2009/05/04/1448787.html
+    http://www.cnblogs.com/koushr/p/5899415.html
+    http://blog.csdn.net/jutal_ljt/article/details/71439844
+    http://www.cnblogs.com/WestGarden/archive/2012/11/19/3138315.html
+    -->
