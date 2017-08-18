@@ -1,0 +1,33 @@
+@charset "utf-8";
+html{font-size: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;	*overflow:auto;_overflow-x:hidden;}
+* html body {
+    width: expression(document.body.clientWidth <= 1000? "1000px":"auto");
+}
+*{box-sizing: content-box}
+body{margin:0;}
+p,ul,ol,form,dl,h1,h2,h3,h4,h5,h6{ margin-top:0; margin-bottom:0;}
+dl,dd{ margin-left:0;}
+ul,ol{padding-left:0;*margin-left:0;list-style-type: none;}
+ul li{*zoom:1;*vertical-align:bottom;list-style-type: none;}
+em,var,cite,i{font-style:normal;}
+small{font-size:inherit;}
+s,a{text-decoration:none;}
+:focus{outline:none;}
+blockquote,q{quotes:none; margin:0;}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;
+img,iframe{border:none;}
+img{vertical-align: top;-ms-interpolation-mode: bicubic;
+textarea,select,button,.tinput,.submit,.button{margin: 0;vertical-align: middle;outline:0;background:transparent;resize:none;}
+textarea{overflow: auto; vertical-align: top;word-break: break-all;word-wrap:break-word;}
+input[type='checkbox'],input[type='radio']{ vertical-align:-2px;*vertical-align:middle;}
+label,button,.button,.submit,.reset{ cursor:pointer;}
+button,input{*overflow: visible; line-height: normal; }
+select{height:22px; line-height:18px; padding:2px 0}
+input[type=text],input[type=password]{ margin-top:0; margin-bottom:0; margin-left:0;vertical-align:-2px;*vertical-align:middle}
+input[type=text],input[type=password]{ height: 16px;line-height: 16px;border: 1px solid #ddd;}
+input[type=submit],input[type=reset],input[type=button],button[type=button],button[type=submit]{ filter:chroma(color=#000000);}
+
+@charset "utf-8";
+.clearfix:before, .clearfix:after,.row:before, .row:after,.ui-row:before, .ui-row:after,.ui-group:before, .ui-group:after{ content:""; display:table; line-height:0; }
+.clearfix:after,.row:after,.ui-row:after,.ui-group:after{ clear:both; }
+.clearfix,.row,.ui-row,.ui-group{ *zoom:1; }

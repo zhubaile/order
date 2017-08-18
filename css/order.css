@@ -1,0 +1,239 @@
+html,body{
+    background-color: #f2f2f2;
+    font-size: 14px;
+    min-width: 1350px;
+}
+.main{}
+.main .left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #444;
+}
+.main .left .menu{
+    width: 75px;
+}
+.main .left .menu-sub{
+    display: none;
+    position: absolute;
+    left: 75px;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    border:1px solid #f2f2f2;
+    background-color: #fff;
+}
+.main .right{
+    margin-left: 75px;
+}
+.main.sub-menu-show .right{
+    margin-left: 196px
+}
+.main.sub-menu-show .menu-sub{
+    display: block;
+}
+/*一级菜单布局css*/
+.left .menu>img{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.menu .menu-item{
+    line-height: 50px;
+}
+.menu .menu-item a{
+    font-size: 16px;
+    display: block;
+    color: #fff;
+}
+.menu .menu-item s{
+    height: 50px;
+    width: 40px;
+    line-height: 50px;
+    display: block;
+    float: left;
+    margin-left: -10px;
+    background-image: url("../image/sprite.png");
+}
+.menu .menu-item:hover{
+    background-color: white;
+}
+.menu .menu-item:hover a{
+    color: black;
+}
+.menu .menu-font{
+    position: absolute;
+    bottom: 70px;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.menu .menu-font:hover{
+    background-color: #535353;
+}
+/*二级菜单布局css*/
+.left .menu-sub h2{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #f2f2f2;
+}
+.menu-sub .menu-item{
+    width: 104px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.menu-sub .menu-item:hover{
+    background-color: #f8f8f8;
+}
+.menu-sub .menu-item a{
+    display: block;
+    color: #666;
+}
+/*主内容页面布局*/
+.right .heared{
+    height: 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.heared h2{
+    line-height: 40px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+.heared span{
+    float: right;
+    margin-right: 30px;
+    margin-top: -40px;
+    line-height: 40px;
+    font-size: 30px;
+}
+.right .box{
+    margin-bottom: 70px;
+}
+.box .box-first{
+    margin: 10px 10px 0 10px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+.box .box-first .box-first-one{
+    height: 258px;
+    margin: 20px 20px 10px 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+.box-first-one .one-heared{
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+}
+.box-first-one .one-heared>h2{
+    float: left;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #5b5b5b;
+}
+.one-heared>span{
+    float: right;
+    padding-right: 10px;
+}
+.box-first-one .one-left{
+    width: 64%;
+    height: 190px;
+    float: left;
+    padding: 25px 0 0 10px;
+    border: 1px solid #e5e5e5;
+}
+.box-first-one .one-left td{
+    height: 25px;
+}
+.box-first-one .one-right{
+    height: 190px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+.one-right .words{
+    border: none;
+    color: #666666;
+    font-size: 16px;
+}
+.box .box-first .box-first-two{
+    height: 203px;
+    margin: 0 20px 10px 20px;
+    border: 1px solid #e5e5e5;
+}
+.box-first-two .two-heared{
+    height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.box-first-two .two-heared .a{
+    width: 400px;
+    height: 30px;
+    text-align: center;
+}
+.box-first-two .two-heared .b{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+.box-first-two .two-center{
+    height: 100px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.box-first-two .two-center .a{
+    width: 400px;
+    height: 100px;
+}
+.box-first-two .two-center .a>img{
+    float: left;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.box-first-two .two-center .b{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}
+.box-first-two .two-center .b.c{
+    width: 249px;
+    color: #e58280;
+    border-left: 1px solid #e5e5e5;
+}
+.box-first-two .two-fonted{
+    height: 70px;
+    background-color: #f3f3f3;
+}
+.two-fonted .right{
+    width: 200px;
+    float: right;
+    line-height: 23px;
+}
+.two-fonted .right .goods{
+    color: #ce1412;
+    font-weight: bold;
+}
+.right .logo{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 70px;
+    background-color:#f2f2f2;
+}
+.logo .photo-logo{
+    text-align: center;
+}
+

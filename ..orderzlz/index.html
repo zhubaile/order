@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中国移动</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <script src="jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- 框架外容器 -->
+    <div class="main" id="main">
+        <!-- 左容器 -->
+        <div class="left"> 
+            <!-- 一级菜单            -->
+            <div class="menu">
+                <h5>中国移动</h5>
+                <ul>
+                    <li class="menu-item">
+                        <a href="javascript:;" data-id="0">首页</a>  
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:;" data-id="1">商品</a>  
+                    </li>
+                </ul>
+            </div>
+            <!-- 二级菜单 -->
+            <div class="menu-sub">
+                <h5>商品</h5>
+                <ul>
+                    <li class="menu-item">
+                        <a href="javascript:;">首页</a>  
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:;">首页</a>  
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <!--右容器-->
+        <div class="right">
+            <div class="main-test">这是主内容</div>
+        </div>          
+    </div>
+    <script>
+    // 下面代码这是参考示例
+    $(function(){
+        var $main=$("#main");
+        $(".menu-item").on("click","a",function(){
+            var $this=$(this),attrId=$this.attr("data-id");
+            if(attrId!="0"){
+                $main.addClass("sub-menu-show")
+            }else{
+                $main.removeClass("sub-menu-show")
+            }
+        })
+    })
+    </script>
+</body>
+</html>
