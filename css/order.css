@@ -45,19 +45,21 @@ html,body{
 .menu .menu-item{
     line-height: 50px;
 }
+.menu .menu-item s{
+    display: block;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #bababa;
+    font-size: 20px;
+}
+.menu .menu-item:hover s{
+    color: #444;
+}
 .menu .menu-item a{
     font-size: 16px;
     display: block;
-    color: #fff;
-}
-.menu .menu-item s{
-    height: 50px;
-    width: 40px;
-    line-height: 50px;
-    display: block;
-    float: left;
-    margin-left: -10px;
-    background-image: url("../image/sprite.png");
+    color: #bababa;
 }
 .menu .menu-item:hover{
     background-color: white;
@@ -72,7 +74,7 @@ html,body{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: #fff;
+    color: #bababa;
     cursor: pointer;
 }
 .menu .menu-font:hover{
@@ -123,106 +125,127 @@ html,body{
 .right .box{
     margin-bottom: 70px;
 }
-.box .box-first{
+.box .box-child{
     margin: 10px 10px 0 10px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
 }
-.box .box-first .box-first-one{
+.box .box-child .box-child-first{
     height: 258px;
     margin: 20px 20px 10px 20px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
 }
-.box-first-one .one-heared{
+.box-child-first .first-heared{
     height: 40px;
     line-height: 40px;
     background-color: #f8f8f8;
     border: 1px solid #e5e5e5;
 }
-.box-first-one .one-heared>h2{
+.box-child-first .first-heared>h2{
     float: left;
     padding-left: 10px;
     font-size: 16px;
     color: #5b5b5b;
 }
-.one-heared>span{
+.first-heared>span{
     float: right;
     padding-right: 10px;
 }
-.box-first-one .one-left{
+.box-child-first .first-left{
+    width: 100%;
+    height: 218px;
+}
+.box-child-first .first-left table{
+    border-collapse: collapse;
+}
+.box-child-first .first-left .infor{
+    float: left;
     width: 64%;
-    height: 190px;
+    margin: 20px 0 0 10px;
+}
+.box-child-first .first-left .infor tr td{
+    line-height: 25px;
+}
+.box-child-first .first-left .rate-premiere{
+    width: 30%;
     float: left;
+    height: 193px;
     padding: 25px 0 0 10px;
-    border: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
 }
-.box-first-one .one-left td{
-    height: 25px;
-}
-.box-first-one .one-right{
-    height: 190px;
+.first-left .rate-premiere .rate-title{
     float: left;
-    padding-left: 10px;
-    padding-top: 25px;
+    display: block;
+    color: #707070;
 }
-.one-right .words{
+.first-left .rate-premiere .rate-fulltxt{
+    float: left;
+    display: block;
+    cursor: text;
+    resize: both;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-rendering: auto;
+    text-align: start;
+    line-height: 18px;
+    color: #333;
+    user-select: text;
     border: none;
-    color: #666666;
-    font-size: 16px;
 }
-.box .box-first .box-first-two{
+.box .box-child .box-child-second{
     height: 203px;
     margin: 0 20px 10px 20px;
     border: 1px solid #e5e5e5;
 }
-.box-first-two .two-heared{
+.box-child-second .second-heared{
     height: 30px;
     border-bottom: 1px solid #e5e5e5;
 }
-.box-first-two .two-heared .a{
+.box-child-second .second-heared .a{
     width: 400px;
     height: 30px;
     text-align: center;
 }
-.box-first-two .two-heared .b{
+.box-child-second .second-heared .b{
     width: 250px;
     height: 30px;
     text-align: center;
 }
-.box-first-two .two-center{
+.box-child-second .second-center{
     height: 100px;
     border-bottom: 1px solid #e5e5e5;
 }
-.box-first-two .two-center .a{
+.box-child-second .second-center .a{
     width: 400px;
     height: 100px;
 }
-.box-first-two .two-center .a>img{
+.box-child-second .second-center .a>img{
     float: left;
     padding-left: 60px;
     padding-right: 30px;
 }
-.box-first-two .two-center .b{
+.box-child-second .second-center .b{
     width: 250px;
     height: 100px;
     text-align: center;
 }
-.box-first-two .two-center .b.c{
+.box-child-second .second-center .b.c{
     width: 249px;
     color: #e58280;
     border-left: 1px solid #e5e5e5;
 }
-.box-first-two .two-fonted{
+.box-child-second .second-fonted{
     height: 70px;
     background-color: #f3f3f3;
 }
-.two-fonted .right{
+.second-fonted .right{
     width: 200px;
     float: right;
     line-height: 23px;
 }
-.two-fonted .right .goods{
+.second-fonted .right .goods{
     color: #ce1412;
     font-weight: bold;
 }
@@ -231,7 +254,7 @@ html,body{
     width: 100%;
     bottom: 0;
     height: 70px;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
 }
 .logo .photo-logo{
     text-align: center;
