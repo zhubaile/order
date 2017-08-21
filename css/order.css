@@ -127,128 +127,129 @@ html,body{
 }
 .box .box-child{
     margin: 10px 10px 0 10px;
+    padding: 10px 20px 20px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
 }
-.box .box-child .box-child-first{
-    height: 258px;
-    margin: 20px 20px 10px 20px;
-    background-color: #fff;
+/*第一块内容*/
+/*table标签*/
+.box-child .infor{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
     border: 1px solid #e5e5e5;
-}
-.box-child-first .first-heared{
-    height: 40px;
+    margin-top: 10px;
+}/*订单信息的一行*/
+.infor .infor_OrderInfo{
+    border-bottom: 1px solid #e5e5e5;
     line-height: 40px;
     background-color: #f8f8f8;
-    border: 1px solid #e5e5e5;
-}
-.box-child-first .first-heared>h2{
-    float: left;
+}/*订单信息*/
+.infor .infor_OrderInfo .infor_OrderInfo_order{
     padding-left: 10px;
     font-size: 16px;
     color: #5b5b5b;
-}
-.first-heared>span{
-    float: right;
+}/*买家下单时间*/
+.infor .infor_OrderInfo .infor_OrderInfo_times{
     padding-right: 10px;
+    color: #999;
+    position: absolute;
+    right: 10px;
 }
-.box-child-first .first-left{
-    width: 100%;
-    height: 218px;
+/*内容布局*/
+.infor .infor_Order{
+    background-color: #fff;
 }
-.box-child-first .first-left table{
-    border-collapse: collapse;
-}
-.box-child-first .first-left .infor{
-    float: left;
-    width: 64%;
-    margin: 20px 0 0 10px;
-}
-.box-child-first .first-left .infor tr td{
+.infor .infor_Order_tent{
+    padding: 20px 0 20px 10px;
+    border-right: 1px solid #f2f2f2;
     line-height: 25px;
 }
-.box-child-first .first-left .rate-premiere{
-    width: 30%;
-    float: left;
-    height: 193px;
-    padding: 25px 0 0 10px;
-    border-left: 1px solid #e5e5e5;
+.infor .infor_Order_note{
+    padding: 20px 0 20px 10px;
 }
-.first-left .rate-premiere .rate-title{
+.infor .infor_Order_tent table .infor_Ordertent td{
+    float: left;
+    line-height: 25px;
+}
+/*卖家留言布局*/
+.infor .infor_Order_note table .infor_Ordernote td{
+    float: left;
+}
+.infor .infor_Order_note table .infor_Ordernote td .rate-title{
     float: left;
     display: block;
     color: #707070;
 }
-.first-left .rate-premiere .rate-fulltxt{
+/*卖家留言的板块*/
+.infor .infor_Order_note table .infor_Ordernote td .rate-fulltxt{
     float: left;
     display: block;
-    cursor: text;
     resize: both;
     overflow: hidden;
     white-space: pre-wrap;
-    word-wrap: break-word;
-    text-rendering: auto;
+    word-wrap: break-word;/*允许长单词换到下一行*/
+    text-rendering: auto;/*细微改善*/
     text-align: start;
-    line-height: 18px;
     color: #333;
     user-select: text;
     border: none;
 }
-.box .box-child .box-child-second{
-    height: 203px;
-    margin: 0 20px 10px 20px;
-    border: 1px solid #e5e5e5;
-}
-.box-child-second .second-heared{
-    height: 30px;
+/*第二块内容*/
+.infor .infor_name{
+    line-height: 30px;
     border-bottom: 1px solid #e5e5e5;
 }
-.box-child-second .second-heared .a{
+.infor .infor_name .sp{
     width: 400px;
-    height: 30px;
     text-align: center;
+    line-height: 30px;
 }
-.box-child-second .second-heared .b{
-    width: 250px;
-    height: 30px;
+.infor .infor_name .tion{
+    width: 200px;
     text-align: center;
+    line-height: 30px;
 }
-.box-child-second .second-center{
-    height: 100px;
-    border-bottom: 1px solid #e5e5e5;
-}
-.box-child-second .second-center .a{
+.infor .infor_infomation .sp{
     width: 400px;
-    height: 100px;
+    line-height: 30px;
 }
-.box-child-second .second-center .a>img{
+.infor .infor_infomation .sp>img{
     float: left;
-    padding-left: 60px;
-    padding-right: 30px;
+    padding: 20px 10px 20px 80px;
 }
-.box-child-second .second-center .b{
-    width: 250px;
-    height: 100px;
+.infor .infor_infomation .sp>span{
+    float: left;
+    padding-top: 20px;
+}
+.infor .infor_infomation .tion{
+    width: 200px;
     text-align: center;
 }
-.box-child-second .second-center .b.c{
-    width: 249px;
-    color: #e58280;
+.infor .infor_infomation .tion.sub{
+    color: #cf1513;
     border-left: 1px solid #e5e5e5;
 }
-.box-child-second .second-fonted{
-    height: 70px;
-    background-color: #f3f3f3;
+.box-child .infor_freight{
+     width: 100%;
+     height: 50px;
+     border: 1px solid #e5e5e5;
+     background-color: #f3f3f3;
 }
-.second-fonted .right{
-    width: 200px;
-    float: right;
-    line-height: 23px;
+.box-child .infor_freight tr{
 }
-.second-fonted .right .goods{
+.box-child .infor_freight tr .goods{
     color: #ce1412;
     font-weight: bold;
 }
+
+
+/*.infor .infor_freight td .freight_box{
+    float: right;
+    line-height: 30px;
+    margin-right: 20px;
+}*/
+/*最后的logo中国移动*/
 .right .logo{
     position: fixed;
     width: 100%;

@@ -50,81 +50,97 @@
         </div>
         <div class="box">
             <div class="box-child">
-                <div class="box-child-first">
-                    <div class="first-heared">
-                        <h2>订单信息</h2>
-                        <span>2016-05-31 12:20:12 买家下单</span>
-                    </div>
-                    <div class="first-left">
+
                         <table class="infor">
-                            <tr>
-                                <td>订单号：</td>
-                                <td>7000000000013201</td>
+                            <tr class="infor_OrderInfo">
+                                <td class="infor_OrderInfo_order">订单信息</td>
+                                <td class="infor_OrderInfo_times">2016-05-31 12:20:12 买家下单</td>
                             </tr>
-                            <tr>
-                                <td>订单状态：</td>
-                                <td>已提交订单</td>
-                            </tr>
-                            <tr>
-                                <td>支付流水号：</td>
-                                <td>6500011124878625</td>
-                            </tr>
-                            <tr>
-                                <td>付款方式：</td>
-                                <td>在线支付</td>
-                            </tr>
-                            <tr>
-                                <td>发票：</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>收货信息：</td>
-                                <td>王二麻子 139 8989 8989 四川省 成都市双流县西流湖街17号 A座 2011室</td>
-                            </tr>
-                        </table>
-                        <div class="rate-premiere">
-                            <div class="rate-title">买家留言：</div>
-                            <textarea class="rate-fulltxt" name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-child-second">
-                    <div class="second-heared">
-                        <table>
-                            <tr>
-                                <td class="a">商品</td>
-                                <td class="b">单价（元）</td>
-                                <td class="b">数量</td>
-                                <td class="b">总价（元）</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="second-center">
-                        <table>
-                            <tr>
-                                <td class="a">
-                                    <img src="image/V8.jpg" alt=""/>
-                                        <span>荣耀 V8 全网通 移动联通电信4G<br/>手机 双卡双待双通</span>
+                            <tr class="infor_Order">
+                                <td class="infor_Order_tent">
+                                    <table class="clearfix">
+                                        <tr class="infor_Ordertent"><!--订单内容-->
+                                            <td>订单号：</td>
+                                            <td>7000000000013201</td>
+                                        </tr>
+                                        <tr class="infor_Ordertent">
+                                            <td>订单状态：</td>
+                                            <td>已提交订单</td>
+                                        </tr>
+                                        <tr class="infor_Ordertent">
+                                            <td>支付流水号：</td>
+                                            <td>6500011124878625</td>
+                                        </tr>
+                                        <tr class="infor_Ordertent">
+                                            <td>付款方式：</td>
+                                            <td>在线支付</td>
+                                        </tr>
+                                        <tr class="infor_Ordertent">
+                                            <td>发票：</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="infor_Ordertent">
+                                            <td>收货信息：</td>
+                                            <td>王二麻子 139 8989 8989 四川省 成都市双流县西流湖街17号 A座 2011室</td>
+                                        </tr>
+                                    </table>
                                 </td>
-                                <td class="b">2499.00</td>
-                                <td class="b">×1</td>
-                                <td class="b c">2499.00</td>
+                                <td class="infor_Order_note">
+                                    <table class="clearfix">
+                                        <tr class="infor_Ordernote">
+                                            <td>
+                                                <div class="rate-title">买家留言：</div>
+                                            </td>
+                                            <td>
+                                                <textarea class="rate-fulltxt" name="" id="" cols="30" rows="10"></textarea>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
                             </tr>
                         </table>
-                    </div>
-                    <div class="second-fonted">
-                        <table class="right">
-                            <tr>
-                                <td align="right">运费：</td>
-                                <td align="left">免运费</td>
-                            </tr>
-                            <tr>
-                                <td align="right">订单金额：</td>
-                                <td align="left" class="goods">2499.00</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                <table class="infor">
+                        <tr class="infor_name">
+                            <td class="sp">商品</td>
+                            <td class="tion">单价（元）</td>
+                            <td class="tion">数量</td>
+                            <td class="tion">总价（元）</td>
+                        </tr>
+                        <tr class="infor_infomation">
+                            <td class="sp">
+                                <img src="image/V8.jpg" alt=""/>
+                                <span>荣耀 V8 全网通 移动联通电信4G<br/>手机 双卡双待双通</span>
+                            </td>
+                            <td class="tion">2499.00</td>
+                            <td class="tion">×1</td>
+                            <td class="tion sub">2499.00</td>
+                        </tr>
+<!--                        <tr class="infor_freight">
+                            <td>
+                                <table class="freight_box">
+                                    <tr>
+                                        <td align="right">运费：</td>
+                                        <td align="left">免运费</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">订单金额：</td>
+                                        <td align="left">2499.00</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>-->
+                    </table>
+                    <table class="infor_freight">
+                        <tr>
+                            <td align="right">运费：</td>
+                            <td align="left">免运费</td>
+                        </tr>
+                        <tr>
+                            <td align="right">订单金额：</td>
+                            <td align="left" class="goods">2499.00</td>
+                        </tr>
+                    </table>
+
             </div>
         </div>
         <div class="logo">
